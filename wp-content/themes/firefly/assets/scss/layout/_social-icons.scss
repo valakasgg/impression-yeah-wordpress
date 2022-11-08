@@ -1,0 +1,32 @@
+.social-icons {
+	padding-right: 1.5rem;
+	position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 1;
+    display: none;
+    @media (min-width: 992px) {
+    	display: block;
+    }
+    &:before {
+    	content: " ";
+	    background: $pink;
+	    position: absolute;
+	    top: 50%;
+	    right: -31.5rem;
+	    -webkit-transform: translate(0, -50%);
+    	transform: translate(0, -50%);
+	    height: 37.5rem;
+	    width: 37.5rem;
+	    border-radius: 100%;
+	    z-index: -1;
+    }
+    a {
+    	color: $white;
+    	display: block;
+    	font-size: 2rem;
+    	margin: 0.5rem 0;
+    }
+}

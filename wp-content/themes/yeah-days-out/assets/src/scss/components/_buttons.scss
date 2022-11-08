@@ -1,0 +1,48 @@
+.button {
+    font-family: $informa;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    background-color: $white;
+    color: $blue;
+    padding: .7rem 1.5rem;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 1rem;
+    min-width: 155px;
+    &:last-child {
+        margin-right: 0;
+    }
+    &.button--pink {
+        background-color: $pink2;
+        color: $white;
+    }
+}
+@media(min-width: 1200px) {
+    .button {
+        position: relative;
+        min-width: 215px;
+        text-align: left;
+        transition: .3s;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 1rem;
+            top: 55%;
+            transform: translateY(-50%);
+            background-image: url("data:image/svg+xml,%3Csvg width='15' height='10' viewBox='0 0 15 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.97748 0.825684L13.9775 4.84952L9.97748 8.82568' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.78998 4.82568H13.165' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 15px;
+        }
+        &:hover {
+            padding-left: 8%;
+            padding-right: 3rem;
+        }
+    }
+    .button--white {
+        &::after {
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.97748 0.825684L12.9775 4.84952L8.97748 8.82568' stroke='%23001F5F' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M0.78998 4.82568H12.165' stroke='%23001F5F' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");        }
+    }
+}

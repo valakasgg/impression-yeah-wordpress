@@ -1,0 +1,23 @@
+.breadcrumbs {
+    color: $l-grey;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    span, a, p {
+        line-height: 1.2rem;
+        font-size: 1.2rem;
+    }
+    span {
+        span {
+            span, a, p {
+                color: $l-grey;
+                margin: 0 1rem;
+                text-decoration: none;
+            }
+        }
+    }
+    .back {
+        color: $pink;
+        text-decoration: underline;
+        margin: 0 1rem;
+    }
+}

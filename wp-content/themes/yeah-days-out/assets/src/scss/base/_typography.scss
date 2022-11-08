@@ -1,0 +1,123 @@
+$dmsans: "DMSans";
+$informa: "InformaPro";
+// $dmsansDir: "../../dist/fonts/dm-sans" !default;
+
+@font-face {
+    font-family: $dmsans;
+    src: url("../../dist/fonts/dm-sans/DMSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $dmsans;
+    src: url("../../dist/fonts/dm-sans/DMSans-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $dmsans;
+    src: url("../../dist/fonts/dm-sans/DMSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $dmsans;
+    src: url("../../dist/fonts/dm-sans/DMSans-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $dmsans;
+    src: url("../../dist/fonts/dm-sans/DMSans-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $dmsans;
+    src: url("../../dist/fonts/dm-sans/DMSans-BoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+// InformaPro
+@font-face {
+    font-family: $informa;
+    src: url("../../dist/fonts/informapro/InformaPro-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: $informa;
+    src: url("../../dist/fonts/informapro/InformaPro-Normal.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: $informa;
+    src: url("../../dist/fonts/informapro/InformaPro-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: $informa;
+    src: url("../../dist/fonts/informapro/InformaPro-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: $informa;
+    src: url("../../dist/fonts/informapro/InformaPro-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: $informa;
+    src: url("../../dist/fonts/informapro/InformaPro-Bold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $informa;
+    // text-transform: uppercase;
+    line-height: 1;
+    margin-top: .35rem;
+    margin-bottom: .75rem;
+    font-weight: 700;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 2.65rem;
+}
+h2 {
+    font-size: 2.05rem;
+    font-weight: 500;
+}
+p {
+    font-family: $dmsans;
+    font-size: 1rem;
+    a {
+        color: $white;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+a {
+    display: inline-block;
+    cursor: pointer;
+}
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,22 @@
+.related-case-studies {
+	.related-case-study {
+		position: relative;
+		height: auto;
+		background-size: cover!important;
+		background-position: center!important;
+		@media (min-width: 992px) {
+			height: 50rem;
+		}
+		.container {
+			position: relative;
+			background: rgba(43, 43, 43, 0.75);
+			padding-top: 15rem;
+			padding-bottom: 3.5rem;
+			@media (min-width: 992px) {
+				position: absolute;
+				bottom: 0;
+				padding-top: 3.5rem;
+			}
+		}
+	}
+}

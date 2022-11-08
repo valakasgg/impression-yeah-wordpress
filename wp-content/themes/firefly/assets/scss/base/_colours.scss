@@ -1,0 +1,50 @@
+// Website Colours
+$pink: #F800BE;
+$green: #03F5ED;
+$purple: #7D00F8;
+$l-grey: #AFAFAF;
+$grey: #363636;
+$d-grey: #2B2B2B;
+$a-grey: #535353;
+$b-grey: #E0E0E0;
+
+//GENERIC COLOURS
+$black: #000;
+$white: #fff;
+
+.pink {
+	color: $pink;
+}
+
+.green {
+	color: $green;
+}
+
+.purple {
+	color: $purple;
+}
+
+.l-grey {
+	color: $l-grey;
+}
+
+.grey {
+	color: $grey;
+}
+
+.d-grey {
+	color: $d-grey;
+}
+
+.white {
+	color: $white;
+}
+
+.black {
+	color: $black;
+}
+
+.background-white {
+	background: $white;
+	color: $black;
+}

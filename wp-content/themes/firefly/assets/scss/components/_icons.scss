@@ -1,0 +1,53 @@
+.icons {
+	padding: 6rem 0;
+	.icon {
+	  	border: 0.5rem solid;
+	  	padding: 4rem 2rem;
+	    border-radius: 0.4rem;
+	    box-shadow: 0rem 0rem 1rem 0.1rem;
+	    position: relative;
+	    transition: 0.2s all;
+		-webkit-transition: all 0.2s;
+		.fa-icon {
+			margin: 1rem 0 4rem 0;
+			position: relative;
+			padding: 3rem;
+			display: inline-block;
+			border-radius: 100%;
+			i {
+				position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    -webkit-transform: translate(-50%, -50%);
+			    transform: translate(-50%, -50%);
+			    z-index: 1;
+				color: $white;
+				font-size: 2.4rem;
+			}
+		}
+		h6 {
+			color: $white;
+		}
+	    &:nth-of-type(3n+1) {
+	    	border-color: $pink;
+	    	color: $pink;
+	    	.fa-icon {
+	    		background: $pink;
+	    	}
+	    }
+	    &:nth-of-type(3n+2) {
+	    	border-color: $green;
+	    	color: $green;
+	    	.fa-icon {
+	    		background: $green;
+	    	}
+	    }
+	    &:nth-of-type(3n+3) {
+	    	border-color: $purple;
+	    	color: $purple;
+	    	.fa-icon {
+	    		background: $purple;
+	    	}
+	    }
+	}
+}

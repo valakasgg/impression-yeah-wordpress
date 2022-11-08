@@ -1,0 +1,42 @@
+.text_block {
+    z-index: 99;
+    .icons {
+        display: none;
+    }
+}
+
+@media(min-width: 1200px) {
+    .text_block {
+        .padding-small {
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+        .padding-medium {
+            padding-left: 6rem !important;
+            padding-right: 6rem !important;
+        }
+        .padding-large {
+            padding-left: 9rem !important;
+            padding-right: 9rem !important;
+        }
+        .icons {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .top,
+        .bottom {
+            position: absolute;
+        }
+        .top {
+            top: -4rem;
+            left: 3rem;
+        }
+        .bottom {
+            bottom: 0rem;
+            right: 4rem;
+        }
+    }
+}

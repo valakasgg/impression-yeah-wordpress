@@ -1,3 +1,89 @@
+/* 
+@font-face {
+    font-family: "DMSans";
+    src: url("../fonts/dm-sans/DMSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("../fonts/dm-sans/DMSans-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("../fonts/dm-sans/DMSans-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("../fonts/dm-sans/DMSans-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("../fonts/dm-sans/DMSans-Bold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("../fonts/dm-sans/DMSans-BoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "InformaPro";
+    src: url("../fonts/informapro/InformaPro-Light.otf") format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "InformaPro";
+    src: url("../fonts/informapro/InformaPro-Normal.otf") format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "InformaPro";
+    src: url("../fonts/informapro/InformaPro-Italic.otf") format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "InformaPro";
+    src: url("../fonts/informapro/InformaPro-Medium.otf") format('opentype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "InformaPro";
+    src: url("../fonts/informapro/InformaPro-MediumItalic.otf") format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "InformaPro";
+    src: url("../fonts/informapro/InformaPro-Bold.otf") format('opentype');
+    font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "InformaPro";
+}
+p,
+a,
+span,
+div {
+    font-family: "DMSans";
+} */
 .uppercase {
     text-transform: uppercase;
 }
@@ -17,4 +103,7 @@
 }
 .button.button--pink {
     background: #b21d81;
+}
+.mce-content-body a {
+
 }

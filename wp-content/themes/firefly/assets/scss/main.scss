@@ -1,0 +1,80 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Base
+@import "base/colours"; 
+@import "base/typography"; 
+
+// Components
+@import "components/hero";
+@import "components/header";
+@import "components/buttons";
+@import "components/contact";
+@import "components/forms";
+@import "components/icons";
+@import "components/section";
+@import "components/accordions";
+@import "components/breadcrumbs";
+@import "components/related-case-studies";
+@import "components/related-product-categories";
+@import "components/related-products";
+@import "components/product-categories";
+@import "components/products";
+
+// Layout
+@import "layout/footer"; 
+@import "layout/header";
+@import "layout/social-icons";
+
+// Vendors
+//@import "vendors/cf7";
+//@import "vendors/aos";
+
+
+html {
+	//overflow-x: hidden;
+	overflow-y: scroll;
+	overflow: -moz-scrollbars-vertical;
+	font-size: 62.5%;
+	box-sizing: border-box;
+	
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: $light;
+	background: $grey;
+	color: $white;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+}
+
+::selection {
+  background: $pink;
+}
+::-moz-selection {
+  background: $pink;
+}
+
+.container {
+	width: 100%;
+	max-width: 174rem;
+	padding: 0 2rem;
+	@media (min-width: 992px) {
+		padding: 0 4rem;
+	}
+	@media (min-width: 1400px) {
+		padding: 0 8rem;
+	}
+	@media (min-width: 1740px) {
+		padding: 0;
+	}
+}
+
+.center-text {
+    @media (min-width: 992px) {
+    	float: left;
+    	left: 25%;
+    	position: relative;
+    }
+}

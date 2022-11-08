@@ -1,0 +1,26 @@
+.product-categories {
+	padding: 4rem 0;
+	.product-category {
+		margin: 0;
+		border-bottom: 0.3rem solid $l-grey;
+		color: $white;
+		transition: 0.2s all;
+		-webkit-transition: all 0.2s;
+		@media (min-width: 992px) {
+			margin: 0 1rem;
+		}
+		&:hover {
+			border-color: $pink;
+		}
+		.image {
+			background-size: cover!important;
+			background-position: center!important;
+			height: 20rem;
+		}
+		p {
+			margin: 1rem 0;
+			line-height: 2.5rem;
+			font-size: 1.6rem;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+// Website Colours
+// #b01674, #b21d81, #782d70, #2a2045, #f8a501, #001f5f, #45c6b0    
+
+$pink1: #b01674;
+$pink2: #b21d81;
+$purple1: #782d70;
+$purple2: #2a2045;
+$orange: #f8a501;
+$blue: #001f5f;
+$turquoise: #45c6b0;
+
+//GENERIC COLOURS
+$black: #000;
+$white: #fff;
+
+.pink1 {
+	color: $pink1;
+}
+.pink2 {
+	color: $pink2;
+}
+.purple1 {
+	color: $purple1;
+}
+.purple2 {
+	color: $purple2;
+}
+.orange {
+	color: $orange;
+}
+.blue {
+	color: $blue;
+}
+.turquoise {
+	color: $turquoise;
+}
+
+.background-white {
+	background: $white;
+	color: $black;
+}

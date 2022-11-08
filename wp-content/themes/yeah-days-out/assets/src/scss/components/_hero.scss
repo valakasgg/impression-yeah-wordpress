@@ -1,0 +1,359 @@
+.hero {
+    .image,
+    .video {
+        // position: absolute;
+        .overlay {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            background: rgb(2,0,36);
+            background-color: rgba(120, 45, 112, 0.5);
+            background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(120,45,112,0.5) 75%, rgba(120,45,112,0.25) 100%);
+            z-index: 99;
+        }
+        img {
+            // position: relative;
+            // width: 200%;
+            // transform: translateX(-50%);
+            // left: 50%;
+        }
+        video {
+            position: relative;
+            width: 275%;
+            transform: translateX(-50%);
+            left: 50%;
+            background-color: #fff;
+        }
+    }
+    .container {
+        position: absolute;
+        top: 10%;
+        z-index: 999;
+        left: 50%;
+        transform: translateX(-50%);
+        // .button {
+        //     min-width: 155px;
+        // }
+    }
+    .container.button-wrapper {
+        top: unset;
+        position: relative;
+        top: -3rem;
+        left: unset;
+        transform: unset;
+    }
+    .circle {
+        background-color: $orange;
+        width: 8.5rem;
+        height: 8.5rem;
+        border-radius: 50%;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        font-family: $informa;
+        animation: pulseScale-up 3s infinite ease-in-out;
+        animation-delay: 2s;
+        margin-top: 2rem;
+        transition: .3s;
+        cursor: pointer;
+        .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+        }
+        .stack ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1rem;
+        }
+        .stack ul li:first-child {
+            font-size: 1.5rem;
+        }
+        .number,
+        .text {
+            line-height: 1;
+        }
+        .number {
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text {
+            font-size: .8rem;
+            color: $blue;
+        }
+    }
+    .swiper-buttons {
+        padding-bottom: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 100%;
+            padding-right: .75rem;
+            padding-left: .75rem;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            min-width: 70px;
+            min-height: 70px;
+            position: relative;
+            margin: 0;
+            &::after {
+                display: none;
+            }
+            transition: .3s;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+        .swiper-button-prev {
+            right: 0;
+            left: unset;
+            transform: rotate(180deg);
+            justify-content: flex-start;
+        }
+        .swiper-button-next {
+            right: 0;
+            left: unset;
+            margin-bottom: 1rem;
+        }
+    }
+    .swiper-pagination {
+        position: relative;
+        left: 0%;
+        width: 100%;
+        height: auto;
+    }
+    .swiper-pagination-bullet {
+        display: block;
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0923 6.2293C12.5029 1.00507 5.3579 -1.10685 2.5641 1.10727C-0.229702 3.3214 -1.3166 6.4203 2.2888 10.388C5.8943 14.3558 11.6816 11.4535 12.0923 6.2293Z' fill='%23B21D81'/%3E%3C/svg%3E%0A");
+    }
+    .swiper-pagination-bullet-active {
+        background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.6257 22.3888C24.0145 20.6477 24.362 7.07576 19.1473 3.20262C13.9326 -0.67051 7.96564 -1.12223 2.68234 7.09503C-2.60096 15.3123 5.23682 24.1298 14.6257 22.3888Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    .curve {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: -4rem;
+        z-index: 9;
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .curve .mobile {
+        display: block;
+    }
+    .curve .desktop {
+        display: none;
+    }
+}
+@keyframes pulseScale-up {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media(min-width: 600px) {
+    .hero {
+        .video,
+        .image {
+            max-height: 64rem;
+        }
+        padding-bottom: 0;
+        .swiper-wrapper {
+            padding-bottom: 0;
+        }
+        .swiper-buttons {
+            bottom: 10rem;
+        }
+        .swiper-pagination {
+            bottom: 6rem;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .hero {
+        max-height: 45rem;
+        .image,
+        .video {
+            // position: absolute;
+            .overlay {
+                background: unset;
+                background-color: rgba(120, 45, 112, 0.5);
+            }
+            video {
+                width: 100%;
+                transform: unset;
+                left: unset;
+            }
+        }
+        .container {
+            top: 13rem;
+            width: 85%;
+            padding-right: 40%;
+            h1,
+            p {
+                margin-bottom: 1.5rem;
+            }
+        }
+        .container.button-wrapper {
+            width: 100%;
+        }
+        .circle {
+            width: 12rem;
+            height: 12rem;
+            bottom: -1rem;
+            .number {
+                font-size: 6rem;
+            }
+            .text {
+                font-size: 1rem;
+            }
+            .stack ul {
+                font-size: 1.5rem;
+            }
+            .stack ul li:first-child {
+                font-size: 3rem;
+            }
+        }
+        .curve {
+            bottom: -5rem;
+        }
+        .curve .mobile {
+            display: none;
+        }
+        .curve .desktop {
+            display: block;
+        }
+        .swiper-buttons {
+            bottom: 15rem;
+            right: 0;
+        }
+        .swiper-pagination {
+            position: absolute;
+            right: 0;
+            bottom: 4rem;
+            left: unset;
+            text-align: right;
+        }
+        .offer {
+            position: absolute;
+            right: 5rem;
+            bottom: -7rem;
+            &:hover .circle {
+                animation-play-state: paused;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media(min-width: 1400px) {
+    .hero {
+        .container {
+            top: 15rem;
+        }
+        .swiper-buttons {
+            bottom: 20rem;
+        }
+        .swiper-pagination {
+            bottom: 6rem;
+        }
+        .circle {
+            bottom: -4rem;
+        }
+        video {
+            top: -1rem;
+        }
+    }
+}
+@media(min-width: 1500px) {
+    .hero {
+        max-height: 48rem;
+        .container {
+            top: 16rem;
+        }
+        .swiper-pagination {
+            bottom: 8rem;
+        }
+        .circle {
+            right: 2rem;
+        }
+        .swiper-buttons {
+            // bottom: 50%;
+        }
+    }
+}
+@media(min-width: 1600px) {
+    .hero {
+        max-height: 51rem;
+        .container {
+            top: 17rem;
+        }
+        .circle {
+            bottom: -6rem;
+            right: 4rem;
+        }
+    } 
+}
+@media(min-width: 1700px) {
+    .hero {
+        max-height: 54rem;
+        .container {
+            top: 18rem;
+        }
+        .circle {
+            bottom: -10rem;
+        }
+    }
+}
+@media(min-width: 1800px) {
+    .hero {
+        max-height: 57rem;
+        .container {
+            top: 19rem;
+        }
+        .circle {
+            bottom: -11rem;
+        }
+        video {
+            top: -1.5rem;
+        }
+    }
+}
+@media(min-width: 1900px) {
+    .hero {
+        max-height: 60rem;
+        .container {
+            top: 20rem;
+        }
+        .circle {
+            bottom: -12rem;
+        }
+    }
+}
+@media(min-width: 2000px) {
+    .hero {
+        max-height: 63rem;
+        .container {
+            top: 35%;
+        }
+        .circle {
+            bottom: -13rem;
+        }
+    }
+}

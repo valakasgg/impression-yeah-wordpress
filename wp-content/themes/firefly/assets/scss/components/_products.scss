@@ -1,0 +1,13 @@
+.products {
+	.product {
+		color: $black;
+		border-bottom: 0.2rem solid $b-grey;
+		.image {
+			background-size: auto 15rem!important;
+			background-repeat: no-repeat!important;
+			background-position: center center!important;
+			min-height: 20rem;
+			margin: 0;
+		}
+	}
+}

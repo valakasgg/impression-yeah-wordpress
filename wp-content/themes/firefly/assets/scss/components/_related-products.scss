@@ -1,0 +1,34 @@
+.related-products {
+	.related-product {
+		color: $black;
+		border-bottom: 0.2rem solid $b-grey;
+		margin: 0 5rem;
+		.image {
+			background-size: auto 15rem!important;
+			background-repeat: no-repeat!important;
+			background-position: center center!important;
+			min-height: 20rem;
+			margin: 0;
+		}
+	}	
+}
+
+.background-white {
+	.title-section {
+		background: $white;
+	}
+	.product-section {
+		background: $b-grey;
+	}
+	.related-products {
+		.related-product {
+			border-bottom: 0.2rem solid $l-grey;
+		}	
+	}
+}
+
+.background-black {
+	.product-section {
+		background: $white;
+	}
+}

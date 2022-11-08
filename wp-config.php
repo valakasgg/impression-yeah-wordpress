@@ -34,6 +34,11 @@ foreach($environments as $environment => $hostname) {
     break;
   }
 }
+
+// disable editors
+define( 'DISALLOW_FILE_EDIT', true );
+define( 'DISALLOW_FILE_MODS', true );
+
 // Exit if ENVIRONMENT is undefined
 if (!defined('ENVIRONMENT')) exit('No database configured for this host');
 // Location of environment-specific configuration

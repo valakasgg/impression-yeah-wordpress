@@ -1,0 +1,18 @@
+.discountContent {
+    font-size: 1em;
+    p {
+        font-size: .9rem;
+        a {
+            transition: .3s;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+@media(min-width: 1200px) {
+    .discountContent {
+        z-index: 9999;
+        position: relative;
+    }
+}

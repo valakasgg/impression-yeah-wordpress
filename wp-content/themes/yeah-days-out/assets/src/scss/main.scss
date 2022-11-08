@@ -1,0 +1,22 @@
+// vendors
+@import './vendors/bootstrap.scss';
+@import './vendors/aos.scss';
+@import './vendors/swiper.scss';
+
+// base
+@import './base/normalise.scss';
+@import './base/colours.scss';
+@import './base/typography.scss';
+
+// layout
+@import './layout/page.scss';
+@import './layout/footer.scss';
+@import './layout/header.scss';
+
+// components
+@import './components/icons.scss';
+@import './components/buttons.scss';
+@import './components/nav.scss';
+@import './components/discount.scss';
+@import './components/hero.scss';
+@import './components/textBlock.scss';

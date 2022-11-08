@@ -1,12 +1,9 @@
-<?php
-
-?>
 <?php get_header(); ?>
 
-    <div id="primary" class="content-area">
+    <main>
             
-        <?php get_template_part( 'impression-config/flexible-content' ); ?>
+        <?php get_template_part( 'flexible-content' ); ?>
 
-    </div><!-- #primary -->
+    </main><!-- #primary -->
   
 <?php get_footer(); ?>
