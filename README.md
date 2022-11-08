@@ -8,7 +8,7 @@ I've used a range of JS libraries and CSS for simple animations to show what is 
 
 ## How its built.
 
-The bulk of the work is done using the Advanced Custom Fields Plugin with some Addons. Utilising the Flexible Content, when a new block inside flexible-content is created, the flexible-content.php file will search for a matching component file.
+The bulk of the work is done using the Advanced Custom Fields Plugin with some Addons. Utilising the Flexible Content field, when a new block inside flexible-content is created,    flexible-content.php file will search for a matching component file.
 
 For the animations, I've used simple CSS keyframes for the pulse effect, AOS JS fade in once in viewport and an advanced SVG Morph using anime.js
 
