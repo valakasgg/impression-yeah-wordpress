@@ -11,7 +11,37 @@
 
 <p>I originally setup webpack in the theme folder with the aim to use Tailwind but struggled to get BrowserSync working. I decided to not waste anymore time and to use CodeKit as it works flawlessly and I&#8217;ve rarely run into issues.</p>
 
-<p>I&#8217;ve used a range of JS libraries and CSS for simple animations to show what is possible. The only negative is that the pagination isn&#8217;t working at this present time which I apolgise about.</p>
+<p>I&#8217;ve used a range of JS libraries and CSS for simple animations to show what is possible. The pagination has the correct positioning but unfortunately isn&#8217;t updating and have done lots of testing with it, I can only think of using something different to get it working which would be Slick Slider.</p>
+
+<h2 id="howitsbuilt.">How its built.</h2>
+
+<p>The bulk of the work is done using the Advanced Custom Fields Plugin with some Addons. Utilising the Flexible Content, when a new block inside flexible-content is created, the flexible-content.php file will search for a matching component file.</p>
+
+<p>For the animations, I&#8217;ve used simple CSS keyframes for the pulse effect, AOS JS fade in once in viewport and an advanced SVG Morph using anime.js</p>
+
+<h3 id="localinstallation">Local Installation</h3>
+
+<ol>
+<li>Install &amp; Setup MAMP + PHPMYADMIN</li>
+<li>Download latest WordPress</li>
+<li>Clone this repo</li>
+<li>Move wp-admin &amp; wp-includes into the directory</li>
+<li>Import database provided into your created database.</li>
+<li>Enter your local site name in wp-config</li>
+<li>Enter your database config into wp-config/wp-config-local.php</li>
+</ol>
+
+<h3 id="serversetup">Server setup</h3>
+
+<ol>
+<li>Setup WordPress Hosting Package</li>
+<li>Create a database (utf8)</li>
+<li>Download latest WordPress</li>
+<li>FTP in &amp; move latest WordPress to server directory (usually public_html)</li>
+<li>Download this repo &amp; move into the same directory</li>
+<li>Import database provided into your created database.</li>
+<li>Edit wp-config folder and files with your database connection info</li>
+</ol>
 
 </body>
 </html>
