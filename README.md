@@ -33,4 +33,4 @@ For the animations, I've used simple CSS keyframes for the pulse effect, AOS JS 
 6. Import database provided into your created database.
 7. Edit wp-config folder and files with your database connection info
 
-
+### See admin login details in login.txt
