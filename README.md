@@ -15,12 +15,11 @@ For the animations, I've used simple CSS keyframes for the pulse effect, AOS JS 
 ### Local Installation
 
 1. Install & Setup MAMP + PHPMYADMIN
-2. Download latest WordPress
-3. Clone this repo
-4. Move wp-admin & wp-includes into the directory
-5. Import database provided into your created database.
+2. Download latest WordPress and put into MAMP directory
+3. Clone this repo + move files into directory
+5. Import database provided into your created database
 6. Enter your local site name in wp-config
-7. Enter your database config into wp-config/wp-config-local.php
+7. Enter your database config into wp-config/wp-config-local.php + sitename
 
 
 ### Server setup
